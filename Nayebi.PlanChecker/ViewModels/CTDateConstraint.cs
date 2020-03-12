@@ -24,10 +24,10 @@ namespace Nayebi.PlanChecker.ViewModels
         public ConstraintResult Constrain(PlanningItem pi)
         {
             var image = pi.GetImage();
-            return Constrain(image);
+            return Constrain(new F.Image(image));
         }
 
-        public ConstraintResult Constrain(Image image)
+        public ConstraintResult Constrain(F.Image image)
         {
             var diffDays = (DateTime.Now - image.CreationDateTime).Value.TotalDays;
             var msg = $"CT is {diffDays} days old";
