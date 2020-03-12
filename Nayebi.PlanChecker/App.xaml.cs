@@ -17,6 +17,7 @@ namespace Nayebi.PlanChecker
     /// <summary>
     /// Interaction logic for App.xaml
     /// </summary>
+    ///  test change
     public partial class App
     {
         private IEventAggregator _ea;
