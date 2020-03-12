@@ -2,6 +2,7 @@
 using ESAPIX.AppKit.Overlay;
 using ESAPIX.Common;
 using ESAPIX.Common.Args;
+using ESAPIX.Constraints;
 using ESAPIX.Interfaces;
 using ESAPIX.Services;
 using Nayebi.PlanChecker.Views;
@@ -30,7 +31,11 @@ namespace Nayebi.PlanChecker
 
         protected override void OnStartup(StartupEventArgs e)
         {
+            //var result = TG263.IsCompliant("Lparotid", "", 5).Result; //NN TG263 added didn't work
+            
+
             _args = e.Args;
+            //_args = ContextIO.ReadArgsFromFile(@"C:\Users\cwalker\Desktop\varian developer"); NN copy saved patient
             base.OnStartup(e);
         }
 
